@@ -15,13 +15,12 @@ class WeatherView: UIView {
     var weatherStatusLabel: UILabel!
     var timeLabel: UILabel!
     var dateLabel: UILabel!
+    var timer: Timer!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         addLayout()
-        
-
 
     }
     
@@ -39,7 +38,7 @@ class WeatherView: UIView {
         weatherStatusLabel.textAlignment = .left
         weatherStatusLabel.font = UIFont(name: "JosefinSans-Light", size: 30)
         
-        degreeLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 80, height: 100))
+        degreeLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 150, height: 100))
         degreeLabel.center = CGPoint(x: center.x, y: center.y - 30)
         degreeLabel.textAlignment = .center
         degreeLabel.font = UIFont(name: "JosefinSans-Light", size: 80)
@@ -56,17 +55,21 @@ class WeatherView: UIView {
         addSubview(cityLabel)
         
         addData()
+        
+        
     }
     
     func addData() {
         
-        timeLabel.text = "1:23 PM"
+        let dateFormat = DateFormat()
         
-        dateLabel.text = "April 4, 2017"
+        timeLabel.text = dateFormat.getCurrentTime()
+        
+        dateLabel.text = dateFormat.getCurrentDay()
         
         weatherStatusLabel.text = "Cloudy"
         
-        degreeLabel.text = "17"
+        degreeLabel.text = "17°"
         
         cityLabel.text = "ITHACA"
 

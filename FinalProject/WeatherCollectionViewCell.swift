@@ -17,6 +17,7 @@ class WeatherCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        backgroundColor = .clear
         
         addLayout()
         
@@ -41,6 +42,12 @@ class WeatherCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(weatherIcon)
         contentView.addSubview(degreeLabel)
         
+    }
+    
+    override func prepareForReuse() {
+        weatherIcon.image = nil
+        degreeLabel.text = nil
+        timeLabel.text = nil
     }
     
     required init?(coder aDecoder: NSCoder) {
