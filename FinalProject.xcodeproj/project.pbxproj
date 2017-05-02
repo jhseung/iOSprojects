@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		947535294E271ABB05ACDF5D /* Pods_FinalProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33743DF55268660EE733680C /* Pods_FinalProject.framework */; };
-		E33A1BFE1EA97829002FB9BB /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33A1BFD1EA97829002FB9BB /* WeatherAPI.swift */; };
-		E33A1C021EA9842E002FB9BB /* TestAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = E33A1C011EA9842E002FB9BB /* TestAPI.json */; };
-		E33A1C071EAD4A52002FB9BB /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33A1C061EAD4A52002FB9BB /* WeatherData.swift */; };
+		E3075BCE1EB17320006259DA /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3075BCD1EB17320006259DA /* RealmObjects.swift */; };
+		E32235011EB1CE1600147EDB /* DateComparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32235001EB1CE1600147EDB /* DateComparison.swift */; };
 		E33A1C091EAD4E96002FB9BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33A1C081EAD4E96002FB9BB /* Assets.xcassets */; };
 		E33A1C0B1EAD5108002FB9BB /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33A1C0A1EAD5108002FB9BB /* DateFormat.swift */; };
-		E33A1C0D1EAD8D71002FB9BB /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33A1C0C1EAD8D71002FB9BB /* Gradient.swift */; };
+		E33A1C0F1EADB26C002FB9BB /* RainAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33A1C0E1EADB26C002FB9BB /* RainAnimationView.swift */; };
+		E33A1C131EADC520002FB9BB /* AutoCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33A1C121EADC520002FB9BB /* AutoCompleteViewController.swift */; };
+		E33A1C3C1EAED156002FB9BB /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33A1C3B1EAED156002FB9BB /* Gradient.swift */; };
+		E359DAF81EB7DE6B00391723 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E359DAF71EB7DE6A00391723 /* PageViewController.swift */; };
 		E389A5271EA5BB5900AAE2B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E389A5261EA5BB5900AAE2B0 /* AppDelegate.swift */; };
 		E389A5291EA5BB5900AAE2B0 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E389A5281EA5BB5900AAE2B0 /* WeatherViewController.swift */; };
 		E389A52F1EA5BB5900AAE2B0 /* FinalProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E389A52D1EA5BB5900AAE2B0 /* FinalProject.xcdatamodeld */; };
@@ -32,38 +34,50 @@
 		E389A56A1EA6A6E400AAE2B0 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = E389A55F1EA6A6E400AAE2B0 /* OFL.txt */; };
 		E389A56C1EA6E52C00AAE2B0 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E389A56B1EA6E52C00AAE2B0 /* WeatherCollectionViewCell.swift */; };
 		E389A5701EA721D900AAE2B0 /* FutureWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E389A56F1EA721D900AAE2B0 /* FutureWeatherView.swift */; };
+		E3AC59F31EB19CD3004D62FF /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC59F21EB19CD3004D62FF /* NetworkRequest.swift */; };
+		E3AC59F51EB19F41004D62FF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AC59F41EB19F41004D62FF /* SwiftyJSON.framework */; };
+		E3AC59F71EB19F45004D62FF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AC59F61EB19F45004D62FF /* Realm.framework */; };
+		E3AC59F91EB19F49004D62FF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AC59F81EB19F49004D62FF /* Alamofire.framework */; };
+		E3AC59FB1EB19F4E004D62FF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AC59FA1EB19F4E004D62FF /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2992DFB36992A0B967FE44E8 /* Pods-FinalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject/Pods-FinalProject.debug.xcconfig"; sourceTree = "<group>"; };
 		33743DF55268660EE733680C /* Pods_FinalProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF16EA223C6440112DD0BEB /* Pods-FinalProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject/Pods-FinalProject.release.xcconfig"; sourceTree = "<group>"; };
-		E33A1BFD1EA97829002FB9BB /* WeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
-		E33A1C011EA9842E002FB9BB /* TestAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TestAPI.json; path = Josefin_Sans/TestAPI.json; sourceTree = "<group>"; };
-		E33A1C061EAD4A52002FB9BB /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		E3075BCD1EB17320006259DA /* RealmObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
+		E32235001EB1CE1600147EDB /* DateComparison.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateComparison.swift; sourceTree = "<group>"; };
 		E33A1C081EAD4E96002FB9BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E33A1C0A1EAD5108002FB9BB /* DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
-		E33A1C0C1EAD8D71002FB9BB /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		E33A1C0E1EADB26C002FB9BB /* RainAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RainAnimationView.swift; path = FinalProject/RainAnimationView.swift; sourceTree = "<group>"; };
+		E33A1C121EADC520002FB9BB /* AutoCompleteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCompleteViewController.swift; sourceTree = "<group>"; };
+		E33A1C3B1EAED156002FB9BB /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		E359DAF71EB7DE6A00391723 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		E389A5231EA5BB5900AAE2B0 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E389A5261EA5BB5900AAE2B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E389A5281EA5BB5900AAE2B0 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		E389A5261EA5BB5900AAE2B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FinalProject/AppDelegate.swift; sourceTree = "<group>"; };
+		E389A5281EA5BB5900AAE2B0 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeatherViewController.swift; path = ../WeatherViewController.swift; sourceTree = "<group>"; };
 		E389A52E1EA5BB5900AAE2B0 /* FinalProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinalProject.xcdatamodel; sourceTree = "<group>"; };
 		E389A5331EA5BB5900AAE2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E389A5351EA5BB5900AAE2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E389A53B1EA6A15300AAE2B0 /* WeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherView.swift; path = FinalProject/WeatherView.swift; sourceTree = "<group>"; };
-		E389A5551EA6A6E400AAE2B0 /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Bold.ttf"; sourceTree = "<group>"; };
-		E389A5561EA6A6E400AAE2B0 /* JosefinSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		E389A5571EA6A6E400AAE2B0 /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic.ttf"; sourceTree = "<group>"; };
-		E389A5581EA6A6E400AAE2B0 /* JosefinSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Light.ttf"; sourceTree = "<group>"; };
-		E389A5591EA6A6E400AAE2B0 /* JosefinSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		E389A55A1EA6A6E400AAE2B0 /* JosefinSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Regular.ttf"; sourceTree = "<group>"; };
-		E389A55B1EA6A6E400AAE2B0 /* JosefinSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		E389A55C1EA6A6E400AAE2B0 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		E389A55D1EA6A6E400AAE2B0 /* JosefinSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Thin.ttf"; sourceTree = "<group>"; };
-		E389A55E1EA6A6E400AAE2B0 /* JosefinSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-ThinItalic.ttf"; sourceTree = "<group>"; };
-		E389A55F1EA6A6E400AAE2B0 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		E389A5551EA6A6E400AAE2B0 /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSans-Bold.ttf"; path = "/Users/jihwan_seung/Documents/cornell_spring_17/iOS_class/FinalProject/Resources/Josefin_Sans/JosefinSans-Bold.ttf"; sourceTree = "<absolute>"; };
+		E389A5561EA6A6E400AAE2B0 /* JosefinSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSans-BoldItalic.ttf"; path = "/Users/jihwan_seung/Documents/cornell_spring_17/iOS_class/FinalProject/Resources/Josefin_Sans/JosefinSans-BoldItalic.ttf"; sourceTree = "<absolute>"; };
+		E389A5571EA6A6E400AAE2B0 /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSans-Italic.ttf"; path = "/Users/jihwan_seung/Documents/cornell_spring_17/iOS_class/FinalProject/Resources/Josefin_Sans/JosefinSans-Italic.ttf"; sourceTree = "<absolute>"; };
+		E389A5581EA6A6E400AAE2B0 /* JosefinSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSans-Light.ttf"; path = "/Users/jihwan_seung/Documents/cornell_spring_17/iOS_class/FinalProject/Resources/Josefin_Sans/JosefinSans-Light.ttf"; sourceTree = "<absolute>"; };
+		E389A5591EA6A6E400AAE2B0 /* JosefinSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSans-LightItalic.ttf"; path = "/Users/jihwan_seung/Documents/cornell_spring_17/iOS_class/FinalProject/Resources/Josefin_Sans/JosefinSans-LightItalic.ttf"; sourceTree = "<absolute>"; };
+		E389A55A1EA6A6E400AAE2B0 /* JosefinSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSans-Regular.ttf"; path = "/Users/jihwan_seung/Documents/cornell_spring_17/iOS_class/FinalProject/Resources/Josefin_Sans/JosefinSans-Regular.ttf"; sourceTree = "<absolute>"; };
+		E389A55B1EA6A6E400AAE2B0 /* JosefinSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSans-SemiBold.ttf"; path = "/Users/jihwan_seung/Documents/cornell_spring_17/iOS_class/FinalProject/Resources/Josefin_Sans/JosefinSans-SemiBold.ttf"; sourceTree = "<absolute>"; };
+		E389A55C1EA6A6E400AAE2B0 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSans-SemiBoldItalic.ttf"; path = "/Users/jihwan_seung/Documents/cornell_spring_17/iOS_class/FinalProject/Resources/Josefin_Sans/JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<absolute>"; };
+		E389A55D1EA6A6E400AAE2B0 /* JosefinSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSans-Thin.ttf"; path = "/Users/jihwan_seung/Documents/cornell_spring_17/iOS_class/FinalProject/Resources/Josefin_Sans/JosefinSans-Thin.ttf"; sourceTree = "<absolute>"; };
+		E389A55E1EA6A6E400AAE2B0 /* JosefinSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSans-ThinItalic.ttf"; path = "/Users/jihwan_seung/Documents/cornell_spring_17/iOS_class/FinalProject/Resources/Josefin_Sans/JosefinSans-ThinItalic.ttf"; sourceTree = "<absolute>"; };
+		E389A55F1EA6A6E400AAE2B0 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = OFL.txt; path = /Users/jihwan_seung/Documents/cornell_spring_17/iOS_class/FinalProject/Resources/Josefin_Sans/OFL.txt; sourceTree = "<absolute>"; };
 		E389A56B1EA6E52C00AAE2B0 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherCollectionViewCell.swift; path = FinalProject/WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		E389A56F1EA721D900AAE2B0 /* FutureWeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FutureWeatherView.swift; path = FinalProject/FutureWeatherView.swift; sourceTree = "<group>"; };
+		E3AC59F21EB19CD3004D62FF /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		E3AC59F41EB19F41004D62FF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/FinalProject-bcyuonbkxrqbdodbevfdrwegvadq/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		E3AC59F61EB19F45004D62FF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../../Library/Developer/Xcode/DerivedData/FinalProject-bcyuonbkxrqbdodbevfdrwegvadq/Build/Products/Debug-iphonesimulator/Realm/Realm.framework"; sourceTree = "<group>"; };
+		E3AC59F81EB19F49004D62FF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/FinalProject-bcyuonbkxrqbdodbevfdrwegvadq/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		E3AC59FA1EB19F4E004D62FF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../../Library/Developer/Xcode/DerivedData/FinalProject-bcyuonbkxrqbdodbevfdrwegvadq/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3AC59FB1EB19F4E004D62FF /* RealmSwift.framework in Frameworks */,
+				E3AC59F91EB19F49004D62FF /* Alamofire.framework in Frameworks */,
+				E3AC59F71EB19F45004D62FF /* Realm.framework in Frameworks */,
+				E3AC59F51EB19F41004D62FF /* SwiftyJSON.framework in Frameworks */,
 				947535294E271ABB05ACDF5D /* Pods_FinalProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +99,10 @@
 		6334E3FBAA98AA62B6A8B280 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E3AC59FA1EB19F4E004D62FF /* RealmSwift.framework */,
+				E3AC59F81EB19F49004D62FF /* Alamofire.framework */,
+				E3AC59F61EB19F45004D62FF /* Realm.framework */,
+				E3AC59F41EB19F41004D62FF /* SwiftyJSON.framework */,
 				33743DF55268660EE733680C /* Pods_FinalProject.framework */,
 			);
 			name = Frameworks;
@@ -101,7 +123,7 @@
 				E389A56F1EA721D900AAE2B0 /* FutureWeatherView.swift */,
 				E389A53B1EA6A15300AAE2B0 /* WeatherView.swift */,
 				E389A56B1EA6E52C00AAE2B0 /* WeatherCollectionViewCell.swift */,
-				E33A1C0C1EAD8D71002FB9BB /* Gradient.swift */,
+				E33A1C0E1EADB26C002FB9BB /* RainAnimationView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -109,9 +131,11 @@
 		E33A1C051EAD24F2002FB9BB /* Network and data */ = {
 			isa = PBXGroup;
 			children = (
-				E33A1BFD1EA97829002FB9BB /* WeatherAPI.swift */,
-				E33A1C061EAD4A52002FB9BB /* WeatherData.swift */,
+				E3AC59F21EB19CD3004D62FF /* NetworkRequest.swift */,
 				E33A1C0A1EAD5108002FB9BB /* DateFormat.swift */,
+				E33A1C3B1EAED156002FB9BB /* Gradient.swift */,
+				E32235001EB1CE1600147EDB /* DateComparison.swift */,
+				E3075BCD1EB17320006259DA /* RealmObjects.swift */,
 			);
 			name = "Network and data";
 			path = FinalProject;
@@ -120,6 +144,7 @@
 		E389A51A1EA5BB5900AAE2B0 = {
 			isa = PBXGroup;
 			children = (
+				E389A5261EA5BB5900AAE2B0 /* AppDelegate.swift */,
 				E33A1C051EAD24F2002FB9BB /* Network and data */,
 				E33A1C041EAD24D5002FB9BB /* View */,
 				E389A5251EA5BB5900AAE2B0 /* FinalProject */,
@@ -141,7 +166,8 @@
 		E389A5251EA5BB5900AAE2B0 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
-				E389A5261EA5BB5900AAE2B0 /* AppDelegate.swift */,
+				E359DAF71EB7DE6A00391723 /* PageViewController.swift */,
+				E33A1C121EADC520002FB9BB /* AutoCompleteViewController.swift */,
 				E389A5281EA5BB5900AAE2B0 /* WeatherViewController.swift */,
 				E389A5321EA5BB5900AAE2B0 /* LaunchScreen.storyboard */,
 				E33A1C081EAD4E96002FB9BB /* Assets.xcassets */,
@@ -154,7 +180,6 @@
 		E389A5531EA6A6CC00AAE2B0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E33A1C011EA9842E002FB9BB /* TestAPI.json */,
 				E389A5541EA6A6E400AAE2B0 /* Josefin_Sans */,
 			);
 			name = Resources;
@@ -250,7 +275,6 @@
 				E389A5631EA6A6E400AAE2B0 /* JosefinSans-Light.ttf in Resources */,
 				E389A5681EA6A6E400AAE2B0 /* JosefinSans-Thin.ttf in Resources */,
 				E389A5651EA6A6E400AAE2B0 /* JosefinSans-Regular.ttf in Resources */,
-				E33A1C021EA9842E002FB9BB /* TestAPI.json in Resources */,
 				E389A56A1EA6A6E400AAE2B0 /* OFL.txt in Resources */,
 				E389A5661EA6A6E400AAE2B0 /* JosefinSans-SemiBold.ttf in Resources */,
 				E389A5601EA6A6E400AAE2B0 /* JosefinSans-Bold.ttf in Resources */,
@@ -313,16 +337,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3AC59F31EB19CD3004D62FF /* NetworkRequest.swift in Sources */,
 				E389A5291EA5BB5900AAE2B0 /* WeatherViewController.swift in Sources */,
+				E3075BCE1EB17320006259DA /* RealmObjects.swift in Sources */,
 				E389A56C1EA6E52C00AAE2B0 /* WeatherCollectionViewCell.swift in Sources */,
+				E32235011EB1CE1600147EDB /* DateComparison.swift in Sources */,
+				E33A1C0F1EADB26C002FB9BB /* RainAnimationView.swift in Sources */,
 				E389A5271EA5BB5900AAE2B0 /* AppDelegate.swift in Sources */,
 				E389A5701EA721D900AAE2B0 /* FutureWeatherView.swift in Sources */,
 				E389A52F1EA5BB5900AAE2B0 /* FinalProject.xcdatamodeld in Sources */,
-				E33A1C0D1EAD8D71002FB9BB /* Gradient.swift in Sources */,
+				E33A1C131EADC520002FB9BB /* AutoCompleteViewController.swift in Sources */,
 				E389A53C1EA6A15300AAE2B0 /* WeatherView.swift in Sources */,
-				E33A1C071EAD4A52002FB9BB /* WeatherData.swift in Sources */,
-				E33A1BFE1EA97829002FB9BB /* WeatherAPI.swift in Sources */,
+				E33A1C3C1EAED156002FB9BB /* Gradient.swift in Sources */,
 				E33A1C0B1EAD5108002FB9BB /* DateFormat.swift in Sources */,
+				E359DAF81EB7DE6B00391723 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
